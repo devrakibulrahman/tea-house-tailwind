@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- ============= favicon link ============= -->
+    <link rel="shortcut icon" href="./assets/logo-img/cup.png" type="image/x-icon">
+    <!-- ============= google font link ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- ============= icon cnd link ============= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ============= tailwind css cnd link ============= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {},
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-manrope selection:bg-orange-400 selection:text-white">
+    <!-- =========== header ============ -->
+    <header id="header" class="w-full min-h-[20vh]">
+        <div class="container mx-auto mb-[50px]">
+            <div class="w-full">
+                <div class="w-full flex items-center justify-between pt-[30px] pb-[30px]">
+                    <div class="w-[60px] h-[60px]">
+                        <img src="./assets/logo-img/cup.png" alt="logo">
+                    </div>
+                    <nav>
+                        <ul class="flex items-center justify-center gap-9">
+                            <li class="text-[18px] font-semibold"><a href="#" class="text-black hover:text-orange-500 transition duration-300">Home</a></li>
+                            <li class="text-[18px] font-semibold"><a href="#" class="text-black hover:text-orange-500 transition duration-300">About</a></li>
+                            <li class="text-[18px] font-semibold"><a href="#" class="text-black hover:text-orange-500 transition duration-300">Shop</a></li>
+                            <li class="text-[18px] font-semibold"><a href="#" class="text-black hover:text-orange-500 transition duration-300">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="w-full h-[750px] flex items-center justify-between ">
+                <div class="w-[628px] max-w-full">
+                    <div>
+                        <h1 class="text-[80px] leading-snug font-black mb-[30px]">It's good <br>tea time at The Tea House</h1>
+                        <p class="text-[18px] leading-[30px] font-medium text-[#777777] w-[513px] max-w-full mb-[30px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    </div>
+                    <button class="flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to to-red-500 px-[18px] py-[22px] rounded-[10px] text-white hover:shadow-lg transition duration-300">
+                        <span class="text-[20px] leading-[27px] font-bold">Explore More</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>                          
+                    </button>
+                </div>
+                <div class="w-[655px] max-w-full relative">
+                    <img src="./assets/bg-img/banner.png" alt="banner" class="w-full">
+                    <div class="w-[255px] h-[100px] bg-white rounded-[10px] flex items-center gap-5 px-6 shadow-lg absolute top-[80%] left-[12%]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 text-orange-400">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                        <div>
+                            <h1 class="text-[30px] font-extrabold leading-[41px]">5.00</h1>
+                            <p class="text-base leading-[22px] font-semibold text-[#777777]">Trust Pilot Ratings</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =========== header ============ -->
+
+    <!-- =========== main ============ -->
+    <main id="main">
+        <!-- ============= feature products -->
+        <section id="feature-products" class="w-full min-h-[20vh]">
+            <div class="container mx-auto">
+                <div class="w-full text-center pt-4 mt-[50px]">
+                    <h1 class="text-[45px] font-extrabold leading-[61px] mb-[27px]">Our Featured Products</h1>
+                    <p class="text-base text-[#777777] font-medium leading-[28px]">We have some delicias Tea in our shop. Good food is the foundation of genuine happiness.</p>
+                </div>
+                <div class="w-full grid grid-cols-4 items-center justify-items-center gap-6 mt-[50px] mb-[150px]">
+                    <div class="w-full  h-[450px] bg-gradient-to-b from-[#F4F4F4] to-transparent rounded-[10px] flex items-center flex-col py-[50px]">
+                        <div class="w-[135px] h-[212px] mb-[50px]">
+                            <img src="./assets/card-img/tea-1.png" alt="tea image">
+                        </div>
+                        <div class="w-[208px] max-w-full h-[84px] text-center">
+                            <h1 class="text-[25px] leading-[34px] font-extrabold mb-[15px]">Milk Tea</h1>
+                            <p class="text-base font-semibold leading-[22px] text-[#777777]">Having a boba-licious day, one sip at a time.</p>
+                        </div>
+                    </div>
+                    <div class="w-full  h-[450px] bg-gradient-to-b from-[#F4F4F4] to-transparent rounded-[10px] flex items-center flex-col py-[50px]">
+                        <div class="w-[135px] h-[212px] mb-[50px]">
+                            <img src="./assets/card-img/tea-2.png" alt="tea image">
+                        </div>
+                        <div class="w-[208px] max-w-full h-[84px] text-center">
+                            <h1 class="text-[25px] leading-[34px] font-extrabold mb-[15px]">Black Tea</h1>
+                            <p class="text-base font-semibold leading-[22px] text-[#777777]">In the presence of tea, worries dissolve...</p>
+                        </div>
+                    </div>
+                    <div class="w-full  h-[450px] bg-gradient-to-b from-[#F4F4F4] to-transparent rounded-[10px] flex items-center flex-col py-[50px]">
+                        <div class="w-[135px] h-[212px] mb-[50px]">
+                            <img src="./assets/card-img/tea-3.png" alt="tea image">
+                        </div>
+                        <div class="w-[208px] max-w-full h-[84px] text-center">
+                            <h1 class="text-[25px] leading-[34px] font-extrabold mb-[15px]">Lemon Tea</h1>
+                            <p class="text-base font-semibold leading-[22px] text-[#777777]">When life gives you lemons, make lemonade.</p>
+                        </div>
+                    </div>
+                    <div class="w-full  h-[450px] bg-gradient-to-b from-[#F4F4F4] to-transparent rounded-[10px] flex items-center flex-col py-[50px]">
+                        <div class="w-[135px] h-[212px] mb-[50px]">
+                            <img src="./assets/card-img/tea-4.png" alt="tea image">
+                        </div>
+                        <div class="w-[208px] max-w-full h-[84px] text-center">
+                            <h1 class="text-[25px] leading-[34px] font-extrabold mb-[15px]">Green Tea</h1>
+                            <p class="text-base font-semibold leading-[22px] text-[#777777]">Green tea comes packed with antioxidants such...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= feature products -->
+        <!-- ============= great tea -->
+        <section id="great-tea" class="w-full min-h-[20vh]">
+            <div class="container mx-auto">
+                <div class="w-full flex gap-[60px] my-[100px]">
+                    <div class="w-1/2 grid grid-cols-2 grid-rows-4 gap-[30px]">
+                        <div class="w-full h-[135px] bg-gradient-to-r from-[#FF0000] to to-[#FF8938] opacity-10 rounded-[10px]"></div>
+                        <div class="w-full bg-[rgba(230,166,35,0.1)] row-span-3 rounded-[10px] flex items-center justify-center">
+                            <img src="./assets/grid-img/fresh-1.png" alt="fresh tea">
+                        </div>
+                        <div class="w-full bg-[rgba(87,118,57,0.1)] row-span-3 rounded-[10px] flex items-center justify-center">
+                            <img src="./assets/grid-img/fresh-2.png" alt="fresh tea">
+                        </div>
+                        <div class="w-full h-[135px] bg-gradient-to-r from-[#D9D9D9] to to-[#FFFFFF] rounded-[10px]"></div>
+                    </div>
+                    <div class="w-1/2">
+                        <div class="w-full mb-[30px]">
+                            <h1 class="text-[45px] font-extrabold max-w-[100%] w-[415px] leading-[61px] mb-[35px]">Great Tea, Freshly Presented</h1>
+                            <p class="text-base font-medium leading-[28px] text-[#777777] ">It's no secret that drinking tea regularly may provide a host of benefits. Most tea contains polyphenol catechins, which is a powerful antioxidant. The moderate amount of caffeine in most teas can also give you an early-morning or mid-afternoon boost, and help with concentration.</p>
+                        </div>
+                        <div class="w-full mb-[20px]">
+                            <h2 class="text-[20px] font-extrabold leading-[27px] mb-[14px]">Unique Taste</h2>
+                            <p class="text-base font-medium leading-[28px] text-[#777777] w-[458px] max-w-full">So allow your freshly boiled water to cool for 1 minute, pour on and sit back and relax while the tea steeps for up to 3 minutes</p>
+                        </div>
+                        <div class="w-full">
+                            <h2 class="text-[20px] font-extrabold leading-[27px] mb-[14px]">Premium Quality</h2>
+                            <p class="text-base font-medium leading-[28px] text-[#777777] w-[458px] max-w-full">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= great tea -->
+        <!-- ============= meet client -->
+        <section id="meet-client" class="w-full min-h-[20vh]">
+            <div class="container mx-auto my-[100px]">
+                <div class="w-full min-h-[650px] bg-gradient-to-r from-orange-500 to to-red-600 rounded-[10px] relative flex items-center justify-start gap-[200px] px-[150px]">
+                    <div class="absolute bottom-0 left-[170px] z-[1]">
+                        <img src="./assets/logo-img/bg-cup.png" alt="logo water">
+                    </div>
+                    <div class="w-[440px] h-auto z-[2]">
+                        <h1 class="text-[45px] leading-[61px] font-extrabold text-white mb-[35px]">Meet Our Super Clients</h1>
+                        <p class="text-base leading-[28px] font-medium text-[#F4F4F4] mb-[30px]">Meet our special clients. They have a coffee shop. They purchase a lot of coffee at our tea house showroom and check their ratings.</p>
+                        <button class="py-[18px] px-[25px] bg-white text-black text-[20px] leading-[27px] font-bold rounded-[8px] hover:bg-gray-100 transition duration-200 ease-in-out">Show All</button>
+                    </div>
+                    <div class="w-[433px] h-[233px] bg-white rounded-[8px] ml-[70px] absolute top-[12%] right-[6%] opacity-45">
+                        <div class="px-[40px] py-[40px] relative">
+                            <div class="absolute top-[-25px] left-[-20px] p-[2px] bg-white rounded-full">
+                                <img src="./assets/client-img/client.png" alt="client image">
+                            </div>
+                            <div class="">
+                                <p class="text-base leading-[28px] text-[#777777] mb-[20px]">The showroom provides fresh and good <br>products.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-[30px] relative">
+                                <div>
+                                    <h2 class="text-base leading-[28px] font-bold text-black">Ilham Yuda</h2>
+                                    <p class="text-base leading-[28px] font-bold text-[#5D5A6F]">Businessman</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[433px] h-[233px] bg-white rounded-[8px] ml-[70px] z-10">
+                        <div class="px-[40px] py-[40px] relative">
+                            <div class="absolute top-[-25px] left-[-20px] p-[2px] bg-white rounded-full">
+                                <img src="./assets/client-img/client.png" alt="client image">
+                            </div>
+                            <div class="">
+                                <p class="text-base leading-[28px] text-[#777777] mb-[20px]">The showroom provides fresh and good <br>products.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-[30px] relative">
+                                <div>
+                                    <h2 class="text-base leading-[28px] font-bold text-black">Ilham Yuda</h2>
+                                    <p class="text-base leading-[28px] font-bold text-[#5D5A6F]">Businessman</p>
+                                </div>
+                                <div class="absolute right-0 bottom-[-20px]">
+                                    <img src="./assets/client-img/circles.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[433px] h-[233px] bg-white rounded-[8px] ml-[70px] absolute bottom-[12%] right-[6%] opacity-45">
+                        <div class="px-[40px] py-[40px] relative">
+                            <div class="absolute top-[-25px] left-[-20px] p-[2px] bg-white rounded-full">
+                                <img src="./assets/client-img/client.png" alt="client image">
+                            </div>
+                            <div class="">
+                                <p class="text-base leading-[28px] text-[#777777] mb-[20px]">The showroom provides fresh and good <br>products.</p>
+                            </div>
+                            <div class="flex items-center justify-between mt-[30px] relative">
+                            <div>
+                                <h2 class="text-base leading-[28px] font-bold text-black">Ilham Yuda</h2>
+                                <p class="text-base leading-[28px] font-bold text-[#5D5A6F]">Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= meet client -->
+        <!-- ============= news event -->
+        <section id="news-event" class="w-full min-h-[20vh]">
+            <div class="container mx-auto my-[100px]">
+                <div class="w-full">
+                    <div class="w-full my-[50px] text-center">
+                        <h1 class="text-[45px] leading-[61px] font-extrabold text-black mb-[25px]">News & Events</h1>
+                        <p class="text-base leading-[28px] font-medium text-[#777777]">We have some fresh news and the most popular events. Here's the latest news and events.</p>
+                    </div>
+                    <div class="w-full grid grid-cols-3 items-center justify-items-center gap-[25px]">
+                        <div class="w-full h-[580px] border-2 border-gray-300 rounded-[10px] p-[30px] flex flex-col items-center">
+                            <div class="mb-[30px] w-full h-[250px]">
+                                <img src="./assets/news-img/news-1.png" class="w-full">
+                            </div>
+                            <div class="w-full">
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[10px]">Feb 05, 2024</p>
+                                <h1 class="w-[225px] text-[20px leading-[27px] font-extrabold text-black mb-[10px]">Collecting 8 points for discount</h1>
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[18px]">We had the tea lunch on February 7, 2024, and collected these items on May 14, 2024.</p>
+                                <button class="text-base text-white font-bold bg-gradient-to-r from-orange-500 to to-red-500 p-[15px] rounded-[6px]">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="w-full h-[580px] border-2 border-gray-300 rounded-[10px] p-[30px] flex flex-col items-center">
+                            <div class="mb-[30px] w-full h-[250px]">
+                                <img src="./assets/news-img/news-1.png" class="w-full">
+                            </div>
+                            <div class="w-full">
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[10px]">Feb 05, 2024</p>
+                                <h1 class="w-[225px] text-[20px leading-[27px] font-extrabold text-black mb-[10px]">Collecting 8 points for discount</h1>
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[18px]">We had the tea lunch on February 7, 2024, and collected these items on May 14, 2024.</p>
+                                <button class="text-base text-white font-bold bg-gradient-to-r from-orange-500 to to-red-500 p-[15px] rounded-[6px]">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="w-full h-[580px] border-2 border-gray-300 rounded-[10px] p-[30px] flex flex-col items-center">
+                            <div class="mb-[30px] w-full h-[250px]">
+                                <img src="./assets/news-img/news-1.png" class="w-full">
+                            </div>
+                            <div class="w-full">
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[10px]">Feb 05, 2024</p>
+                                <h1 class="w-[225px] text-[20px leading-[27px] font-extrabold text-black mb-[10px]">Collecting 8 points for discount</h1>
+                                <p class="text-base leading-[28px] font-medium text-[#777777] mb-[18px]">We had the tea lunch on February 7, 2024, and collected these items on May 14, 2024.</p>
+                                <button class="text-base text-white font-bold bg-gradient-to-r from-orange-500 to to-red-500 p-[15px] rounded-[6px]">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= news event -->
+    </main>
+    <!-- =========== main ============ -->
+
+    <!-- =========== footer ============ -->
+    <footer id="footer" class="w-full min-h-[70vh] bg-gradient-to-tr from-[#FF89381A] to to-[#FF00001A]">
+        <div class="container mx-auto">
+            <div class="w-full flex items-center justify-between pt-[130px]">
+                <div>
+                    <img src="./assets/logo-img/cup.png" alt="">
+                </div>
+                <div class="space-x-[40px]">
+                    <span class="text-[20px] leading-[40px] font-medium text-[#494949]">Ready to get strated?</span>
+                    <button class="py-[15px] px-[25px] bg-gradient-to-r from-orange-500 to to-red-500 text-[20px] leading-[27px] font-bold text-white rounded-[8px]">Get Started</button>
+                </div>
+            </div>
+            <div class="w-full flex justify-between mt-[80px]">
+                <div>
+                    <h1 class="text-[20px] leading-[27px] font-semibold text-black mb-[25px]">Quick Links</h1>
+                    <ul class="space-y-[18px]">
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Home</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">About Us</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Insurance</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[20px] leading-[27px] font-semibold text-black mb-[25px]">Our Service</h1>
+                    <ul class="space-y-[18px]">
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Life Insurance</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Car Insurance</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Health Insurance</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[20px] leading-[27px] font-semibold text-black mb-[25px]">Help</h1>
+                    <ul class="space-y-[18px]">
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">FAQs</a></li>
+                        <li class="text-base leading-[22px] font-normal"><a href="#" class="text-[#494949] hover:text-orange-500 hover:transition-all hover:duration-300 hover:ease">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[24px] leading-[40px] font-semibold text-black mb-[25px]">Subscribe to our <br>newsletter</h1>
+                    <div class="w-full flex items-center gap-[20px] mb-[30px]">
+                        <input type="email" placeholder="Email Address" class="py-[20px] pr-[60px] bg-transparent border-b-2 border-[#494949] outline-none placeholder:text-sm placeholder:leading-[18px] placeholder:font-normal placeholder:text-[#494949]">
+                        <div class="bg-gradient-to-r from-orange-500 to to-red-500 text-white rounded-full py-[10px] px-[10px] cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>                          
+                        </div>
+                    </div>
+                    <div class="space-x-8 flex items-center">
+                        <i class="fa-brands fa-facebook-f text-[20px] text-[#494949] cursor-pointer hover:text-orange-500 hover:duration-300 hover:transition-all hover:ease-linear"></i>
+                        <i class="fa-brands fa-twitter text-[20px] text-[#494949] cursor-pointer hover:text-orange-500 hover:duration-300 hover:transition-all hover:ease-linear"></i>
+                        <i class='bx bxl-instagram-alt text-[25px] text-[#494949] cursor-pointer hover:text-orange-500 hover:duration-300 hover:transition-all hover:ease-linear'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full my-[80px] text-center">
+                <p class="text-base leading-[22px] font-medium">© Tea House 2024 - All rights reserved. Design provide by <span class="text-orange-500"><strong>Programming Hero</strong></span> and developed by <span class="text-orange-500"><strong>Rakibul Rahman</strong></span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- =========== footer ============ -->
+</body>
+</html>
